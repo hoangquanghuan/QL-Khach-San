@@ -1,0 +1,7 @@
+F:\huan\Thuc tap nhom chieu thu 4\GitHub\my-frirst-project\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csprojAssemblyReference.cache
+F:\huan\Thuc tap nhom chieu thu 4\GitHub\my-frirst-project\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmDangNhap.resources
+F:\huan\Thuc tap nhom chieu thu 4\GitHub\my-frirst-project\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.Properties.Resources.resources
+F:\huan\Thuc tap nhom chieu thu 4\GitHub\my-frirst-project\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csproj.GenerateResource.cache
+F:\huan\Thuc tap nhom chieu thu 4\GitHub\my-frirst-project\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csproj.CoreCompileInputs.cache
+F:\huan\Thuc tap nhom chieu thu 4\GitHub\my-frirst-project\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmLogin.resources
+F:\huan\Thuc tap nhom chieu thu 4\GitHub\my-frirst-project\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmDoiMK.resources
