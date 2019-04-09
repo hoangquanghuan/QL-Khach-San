@@ -67,9 +67,10 @@ namespace quản_lý_khách_sạn.DangNhap
                     GetUserAndPassword.Username = NhapUser_textBox.Text;
                     GetUserAndPassword.Password = NhapPass_textBox.Text;
                     frmMain f = new frmMain();
-                    //	this.Hide();
+                    	this.Hide();
                     f.ShowDialog();
                     //	Application.Exit();
+                    this.Close();
                 }
                 else
                 {

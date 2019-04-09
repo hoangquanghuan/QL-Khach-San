@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace quản_lý_khách_sạn.DangNhap
+namespace BUS
 {
-    public partial class frmMain : Form
+    public partial class Form1 : Form
     {
-        public frmMain()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        private void frmMain_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void palPhong_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
