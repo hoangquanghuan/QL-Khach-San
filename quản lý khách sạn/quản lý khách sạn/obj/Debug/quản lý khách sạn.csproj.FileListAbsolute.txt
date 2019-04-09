@@ -5,3 +5,21 @@ F:\huan\Thuc tap nhom chieu thu 4\GitHub\my-frirst-project\quản lý khách s�
 F:\huan\Thuc tap nhom chieu thu 4\GitHub\my-frirst-project\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csproj.CoreCompileInputs.cache
 F:\huan\Thuc tap nhom chieu thu 4\GitHub\my-frirst-project\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmLogin.resources
 F:\huan\Thuc tap nhom chieu thu 4\GitHub\my-frirst-project\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmDoiMK.resources
+C:\Users\Hai-Dong\Documents\GitHub\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csprojResolveAssemblyReference.cache
+C:\Users\Hai-Dong\Documents\GitHub\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmLogin.resources
+C:\Users\Hai-Dong\Documents\GitHub\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmMain.resources
+C:\Users\Hai-Dong\Documents\GitHub\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmDoiMK.resources
+C:\Users\Hai-Dong\Documents\GitHub\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmThongTinHoaDon_ChiTiet.resources
+C:\Users\Hai-Dong\Documents\GitHub\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.Properties.Resources.resources
+C:\Users\Hai-Dong\Documents\GitHub\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csproj.GenerateResource.Cache
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\quản lý khách sạn.exe
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\quản lý khách sạn.pdb
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csprojResolveAssemblyReference.cache
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmLogin.resources
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmMain.resources
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmDoiMK.resources
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmThongTinHoaDon_ChiTiet.resources
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.Properties.Resources.resources
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csproj.GenerateResource.Cache
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.exe
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.pdb

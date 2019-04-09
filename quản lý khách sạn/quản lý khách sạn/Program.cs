@@ -16,7 +16,7 @@ namespace quản_lý_khách_sạn
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.Run(new DangNhap.frmLogin());
         }
     }
 }

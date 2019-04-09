@@ -62,7 +62,7 @@ namespace quản_lý_khách_sạn.DangNhap
             }
             else
             {
-                if (NhapUser_label.Text == "admin" && NhapPass_textBox.Text == frmDoiMK.GetNewPassword.NewPassword)
+                if (NhapUser_textBox.Text == "admin" && NhapPass_textBox.Text == frmDoiMK.GetNewPassword.NewPassword)
                 {
                     GetUserAndPassword.Username = NhapUser_textBox.Text;
                     GetUserAndPassword.Password = NhapPass_textBox.Text;
