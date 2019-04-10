@@ -23,3 +23,9 @@ C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý 
 C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csproj.GenerateResource.Cache
 C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.exe
 C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.pdb
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\BUS.exe
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DTO.exe
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DAO.exe
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\BUS.pdb
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DTO.pdb
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DAO.pdb

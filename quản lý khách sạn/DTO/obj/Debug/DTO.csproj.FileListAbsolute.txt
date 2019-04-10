@@ -1,0 +1,8 @@
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DTO\bin\Debug\DTO.exe.config
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DTO\bin\Debug\DTO.exe
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DTO\bin\Debug\DTO.pdb
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.csproj.GenerateResource.Cache
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.exe
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.pdb

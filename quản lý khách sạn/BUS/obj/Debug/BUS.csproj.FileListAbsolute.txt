@@ -1,0 +1,12 @@
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\BUS\bin\Debug\BUS.exe.config
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\BUS\bin\Debug\BUS.exe
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\BUS\bin\Debug\BUS.pdb
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\BUS\bin\Debug\DAO.exe
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\BUS\bin\Debug\DTO.exe
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\BUS\bin\Debug\DAO.pdb
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\BUS\bin\Debug\DTO.pdb
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\BUS\obj\Debug\BUS.csproj.GenerateResource.Cache
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\BUS\obj\Debug\BUS.exe
+C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\BUS\obj\Debug\BUS.pdb

@@ -32,14 +32,14 @@
             this.tbcKhachsan = new System.Windows.Forms.TabControl();
             this.QLPhong_tabPage = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmbTinh_trang = new System.Windows.Forms.ComboBox();
+            this.cmbLoai_phong = new System.Windows.Forms.ComboBox();
+            this.txtTen_phong = new System.Windows.Forms.TextBox();
+            this.txtMa_phong = new System.Windows.Forms.TextBox();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.palPhong = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dvgPhong = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -127,12 +127,13 @@
             this.label33 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.tbcKhachsan.SuspendLayout();
             this.QLPhong_tabPage.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.palPhong.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgPhong)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -184,14 +185,15 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnThoat);
+            this.groupBox2.Controls.Add(this.cmbTinh_trang);
+            this.groupBox2.Controls.Add(this.cmbLoai_phong);
+            this.groupBox2.Controls.Add(this.txtTen_phong);
+            this.groupBox2.Controls.Add(this.txtMa_phong);
+            this.groupBox2.Controls.Add(this.btnLuu);
+            this.groupBox2.Controls.Add(this.btnSua);
+            this.groupBox2.Controls.Add(this.btnThem);
+            this.groupBox2.Controls.Add(this.btnXoa);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
@@ -207,103 +209,105 @@
             this.groupBox2.Text = "Thông tin chi tiết";
             this.groupBox2.UseWaitCursor = true;
             // 
-            // comboBox2
+            // cmbTinh_trang
             // 
-            this.comboBox2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbTinh_trang.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.cmbTinh_trang.FormattingEnabled = true;
+            this.cmbTinh_trang.Items.AddRange(new object[] {
             "Trống",
             "Đang sử dụng",
             "Đang sửa chữa"});
-            this.comboBox2.Location = new System.Drawing.Point(100, 242);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(205, 25);
-            this.comboBox2.TabIndex = 12;
-            this.comboBox2.Text = "(vui lòng lựa chọn)";
-            this.comboBox2.UseWaitCursor = true;
+            this.cmbTinh_trang.Location = new System.Drawing.Point(100, 242);
+            this.cmbTinh_trang.Name = "cmbTinh_trang";
+            this.cmbTinh_trang.Size = new System.Drawing.Size(205, 25);
+            this.cmbTinh_trang.TabIndex = 12;
+            this.cmbTinh_trang.Text = "(vui lòng lựa chọn)";
+            this.cmbTinh_trang.UseWaitCursor = true;
             // 
-            // comboBox1
+            // cmbLoai_phong
             // 
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbLoai_phong.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.cmbLoai_phong.FormattingEnabled = true;
+            this.cmbLoai_phong.Items.AddRange(new object[] {
             "Vip",
             "Thường"});
-            this.comboBox1.Location = new System.Drawing.Point(100, 190);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(205, 25);
-            this.comboBox1.TabIndex = 11;
-            this.comboBox1.Text = "(vui long lựa chọn)";
-            this.comboBox1.UseWaitCursor = true;
+            this.cmbLoai_phong.Location = new System.Drawing.Point(100, 190);
+            this.cmbLoai_phong.Name = "cmbLoai_phong";
+            this.cmbLoai_phong.Size = new System.Drawing.Size(205, 25);
+            this.cmbLoai_phong.TabIndex = 11;
+            this.cmbLoai_phong.Text = "(vui long lựa chọn)";
+            this.cmbLoai_phong.UseWaitCursor = true;
             // 
-            // textBox2
+            // txtTen_phong
             // 
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.textBox2.Location = new System.Drawing.Point(100, 134);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 26);
-            this.textBox2.TabIndex = 10;
-            this.textBox2.UseWaitCursor = true;
+            this.txtTen_phong.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.txtTen_phong.Location = new System.Drawing.Point(100, 134);
+            this.txtTen_phong.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTen_phong.Multiline = true;
+            this.txtTen_phong.Name = "txtTen_phong";
+            this.txtTen_phong.Size = new System.Drawing.Size(205, 26);
+            this.txtTen_phong.TabIndex = 10;
+            this.txtTen_phong.UseWaitCursor = true;
             // 
-            // textBox1
+            // txtMa_phong
             // 
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.textBox1.Location = new System.Drawing.Point(100, 77);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 26);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.UseWaitCursor = true;
+            this.txtMa_phong.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.txtMa_phong.Location = new System.Drawing.Point(100, 77);
+            this.txtMa_phong.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMa_phong.Multiline = true;
+            this.txtMa_phong.Name = "txtMa_phong";
+            this.txtMa_phong.Size = new System.Drawing.Size(205, 26);
+            this.txtMa_phong.TabIndex = 9;
+            this.txtMa_phong.UseWaitCursor = true;
             // 
-            // button4
+            // btnLuu
             // 
-            this.button4.Location = new System.Drawing.Point(236, 346);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(56, 29);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Lưu";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.UseWaitCursor = true;
+            this.btnLuu.Location = new System.Drawing.Point(236, 346);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(56, 29);
+            this.btnLuu.TabIndex = 8;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.UseWaitCursor = true;
+            this.btnLuu.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // btnSua
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.button3.Location = new System.Drawing.Point(160, 346);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(56, 29);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Sửa";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.UseWaitCursor = true;
+            this.btnSua.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnSua.Location = new System.Drawing.Point(160, 346);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(56, 29);
+            this.btnSua.TabIndex = 7;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.UseWaitCursor = true;
             // 
-            // button2
+            // btnThem
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.button2.Location = new System.Drawing.Point(84, 346);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 29);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Thêm";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.UseWaitCursor = true;
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnThem.Location = new System.Drawing.Point(84, 346);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(56, 29);
+            this.btnThem.TabIndex = 6;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.UseWaitCursor = true;
+            this.btnThem.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnXoa
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.button1.Location = new System.Drawing.Point(14, 346);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 29);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Xóa";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.UseWaitCursor = true;
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnXoa.Location = new System.Drawing.Point(14, 346);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(56, 29);
+            this.btnXoa.TabIndex = 5;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseWaitCursor = true;
             // 
             // label5
             // 
@@ -378,7 +382,7 @@
             // 
             // palPhong
             // 
-            this.palPhong.Controls.Add(this.dataGridView1);
+            this.palPhong.Controls.Add(this.dvgPhong);
             this.palPhong.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.palPhong.Location = new System.Drawing.Point(6, 23);
             this.palPhong.Margin = new System.Windows.Forms.Padding(2);
@@ -388,14 +392,14 @@
             this.palPhong.UseWaitCursor = true;
             this.palPhong.Paint += new System.Windows.Forms.PaintEventHandler(this.palPhong_Paint);
             // 
-            // dataGridView1
+            // dvgPhong
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(532, 465);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.UseWaitCursor = true;
+            this.dvgPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgPhong.Location = new System.Drawing.Point(3, 3);
+            this.dvgPhong.Name = "dvgPhong";
+            this.dvgPhong.Size = new System.Drawing.Size(532, 465);
+            this.dvgPhong.TabIndex = 0;
+            this.dvgPhong.UseWaitCursor = true;
             // 
             // tabPage1
             // 
@@ -565,6 +569,7 @@
             this.button7.Text = "Thêm";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.UseWaitCursor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -1379,6 +1384,19 @@
             this.panel5.TabIndex = 0;
             this.panel5.UseWaitCursor = true;
             // 
+            // btnThoat
+            // 
+            this.btnThoat.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnThoat.Location = new System.Drawing.Point(126, 407);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(64, 29);
+            this.btnThoat.TabIndex = 13;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseWaitCursor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1401,7 +1419,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.palPhong.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgPhong)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -1427,11 +1445,11 @@
         private System.Windows.Forms.TabControl tbcKhachsan;
         private System.Windows.Forms.TabPage QLPhong_tabPage;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtMa_phong;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -1439,9 +1457,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel palPhong;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtTen_phong;
+        private System.Windows.Forms.ComboBox cmbTinh_trang;
+        private System.Windows.Forms.ComboBox cmbLoai_phong;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Panel panel2;
@@ -1521,6 +1539,7 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dvgPhong;
+        private System.Windows.Forms.Button btnThoat;
     }
 }
