@@ -57,10 +57,6 @@ namespace quản_lý_khách_sạn.DangNhap
             }
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
@@ -95,6 +91,11 @@ namespace quản_lý_khách_sạn.DangNhap
             {
                 MessageBox.Show("xóa không thành công");
             }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -37,7 +37,6 @@
             this.cmbLoai_phong = new System.Windows.Forms.ComboBox();
             this.txtTen_phong = new System.Windows.Forms.TextBox();
             this.txtMa_phong = new System.Windows.Forms.TextBox();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -51,22 +50,21 @@
             this.dvgPhong = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.lblSDT = new System.Windows.Forms.Label();
+            this.lblDia_chi = new System.Windows.Forms.Label();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtDia_chi = new System.Windows.Forms.TextBox();
+            this.cmbGioi_tinh = new System.Windows.Forms.ComboBox();
+            this.txtTen_nhanvien = new System.Windows.Forms.TextBox();
+            this.txtMa_nhanvien = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.btnXoaNV = new System.Windows.Forms.Button();
+            this.lblNgaysinh = new System.Windows.Forms.Label();
+            this.lblGioi_tinh = new System.Windows.Forms.Label();
+            this.lblTen_nhanvien = new System.Windows.Forms.Label();
+            this.lblMa_nhanvien = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -128,6 +126,8 @@
             this.label33 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.dvgNhanvien = new System.Windows.Forms.DataGridView();
+            this.dtpNgay_sinh = new System.Windows.Forms.DateTimePicker();
             this.tbcKhachsan.SuspendLayout();
             this.QLPhong_tabPage.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -137,6 +137,7 @@
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -146,6 +147,7 @@
             this.tabPage4.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgNhanvien)).BeginInit();
             this.SuspendLayout();
             // 
             // tbcKhachsan
@@ -190,7 +192,6 @@
             this.groupBox2.Controls.Add(this.cmbLoai_phong);
             this.groupBox2.Controls.Add(this.txtTen_phong);
             this.groupBox2.Controls.Add(this.txtMa_phong);
-            this.groupBox2.Controls.Add(this.btnLuu);
             this.groupBox2.Controls.Add(this.btnSua);
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Controls.Add(this.btnXoa);
@@ -273,22 +274,10 @@
             this.txtMa_phong.TabIndex = 9;
             this.txtMa_phong.UseWaitCursor = true;
             // 
-            // btnLuu
-            // 
-            this.btnLuu.Location = new System.Drawing.Point(236, 346);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(56, 29);
-            this.btnLuu.TabIndex = 8;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.UseWaitCursor = true;
-            this.btnLuu.Click += new System.EventHandler(this.button4_Click);
-            // 
             // btnSua
             // 
             this.btnSua.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.btnSua.Location = new System.Drawing.Point(160, 346);
+            this.btnSua.Location = new System.Drawing.Point(233, 346);
             this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(56, 29);
@@ -301,7 +290,7 @@
             // btnThem
             // 
             this.btnThem.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.btnThem.Location = new System.Drawing.Point(84, 346);
+            this.btnThem.Location = new System.Drawing.Point(134, 346);
             this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(56, 29);
@@ -314,7 +303,7 @@
             // btnXoa
             // 
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.btnXoa.Location = new System.Drawing.Point(14, 346);
+            this.btnXoa.Location = new System.Drawing.Point(24, 346);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(56, 29);
@@ -432,22 +421,22 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Controls.Add(this.textBox7);
-            this.groupBox4.Controls.Add(this.textBox6);
-            this.groupBox4.Controls.Add(this.textBox5);
-            this.groupBox4.Controls.Add(this.comboBox3);
-            this.groupBox4.Controls.Add(this.textBox3);
-            this.groupBox4.Controls.Add(this.textBox4);
+            this.groupBox4.Controls.Add(this.dtpNgay_sinh);
+            this.groupBox4.Controls.Add(this.lblSDT);
+            this.groupBox4.Controls.Add(this.lblDia_chi);
+            this.groupBox4.Controls.Add(this.txtSDT);
+            this.groupBox4.Controls.Add(this.txtDia_chi);
+            this.groupBox4.Controls.Add(this.cmbGioi_tinh);
+            this.groupBox4.Controls.Add(this.txtTen_nhanvien);
+            this.groupBox4.Controls.Add(this.txtMa_nhanvien);
             this.groupBox4.Controls.Add(this.button5);
             this.groupBox4.Controls.Add(this.button6);
             this.groupBox4.Controls.Add(this.button7);
-            this.groupBox4.Controls.Add(this.button8);
-            this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.label9);
+            this.groupBox4.Controls.Add(this.btnXoaNV);
+            this.groupBox4.Controls.Add(this.lblNgaysinh);
+            this.groupBox4.Controls.Add(this.lblGioi_tinh);
+            this.groupBox4.Controls.Add(this.lblTen_nhanvien);
+            this.groupBox4.Controls.Add(this.lblMa_nhanvien);
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -459,112 +448,101 @@
             this.groupBox4.Text = "Thông tin chi tiết";
             this.groupBox4.UseWaitCursor = true;
             // 
-            // label12
+            // lblSDT
             // 
-            this.label12.Location = new System.Drawing.Point(5, 356);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(74, 19);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "SĐT:";
-            this.label12.UseWaitCursor = true;
+            this.lblSDT.Location = new System.Drawing.Point(5, 356);
+            this.lblSDT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSDT.Name = "lblSDT";
+            this.lblSDT.Size = new System.Drawing.Size(74, 19);
+            this.lblSDT.TabIndex = 16;
+            this.lblSDT.Text = "SĐT:";
+            this.lblSDT.UseWaitCursor = true;
             // 
-            // label11
+            // lblDia_chi
             // 
-            this.label11.Location = new System.Drawing.Point(5, 297);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(74, 19);
-            this.label11.TabIndex = 15;
-            this.label11.Text = "Địa chỉ:";
-            this.label11.UseWaitCursor = true;
+            this.lblDia_chi.Location = new System.Drawing.Point(5, 297);
+            this.lblDia_chi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDia_chi.Name = "lblDia_chi";
+            this.lblDia_chi.Size = new System.Drawing.Size(74, 19);
+            this.lblDia_chi.TabIndex = 15;
+            this.lblDia_chi.Text = "Địa chỉ:";
+            this.lblDia_chi.UseWaitCursor = true;
             // 
-            // textBox7
+            // txtSDT
             // 
-            this.textBox7.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.textBox7.Location = new System.Drawing.Point(110, 353);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(195, 26);
-            this.textBox7.TabIndex = 14;
-            this.textBox7.UseWaitCursor = true;
+            this.txtSDT.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.txtSDT.Location = new System.Drawing.Point(110, 353);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSDT.Multiline = true;
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(195, 26);
+            this.txtSDT.TabIndex = 14;
+            this.txtSDT.UseWaitCursor = true;
             // 
-            // textBox6
+            // txtDia_chi
             // 
-            this.textBox6.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.textBox6.Location = new System.Drawing.Point(110, 297);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(195, 26);
-            this.textBox6.TabIndex = 13;
-            this.textBox6.UseWaitCursor = true;
+            this.txtDia_chi.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.txtDia_chi.Location = new System.Drawing.Point(110, 297);
+            this.txtDia_chi.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDia_chi.Multiline = true;
+            this.txtDia_chi.Name = "txtDia_chi";
+            this.txtDia_chi.Size = new System.Drawing.Size(195, 26);
+            this.txtDia_chi.TabIndex = 13;
+            this.txtDia_chi.UseWaitCursor = true;
             // 
-            // textBox5
+            // cmbGioi_tinh
             // 
-            this.textBox5.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.textBox5.Location = new System.Drawing.Point(110, 239);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(195, 26);
-            this.textBox5.TabIndex = 12;
-            this.textBox5.UseWaitCursor = true;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cmbGioi_tinh.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.cmbGioi_tinh.FormattingEnabled = true;
+            this.cmbGioi_tinh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.comboBox3.Location = new System.Drawing.Point(110, 185);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(195, 25);
-            this.comboBox3.TabIndex = 11;
-            this.comboBox3.Text = "(vui lòng lựa chọn)";
-            this.comboBox3.UseWaitCursor = true;
+            this.cmbGioi_tinh.Location = new System.Drawing.Point(110, 185);
+            this.cmbGioi_tinh.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbGioi_tinh.Name = "cmbGioi_tinh";
+            this.cmbGioi_tinh.Size = new System.Drawing.Size(195, 25);
+            this.cmbGioi_tinh.TabIndex = 11;
+            this.cmbGioi_tinh.Text = "(vui lòng lựa chọn)";
+            this.cmbGioi_tinh.UseWaitCursor = true;
             // 
-            // textBox3
+            // txtTen_nhanvien
             // 
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.textBox3.Location = new System.Drawing.Point(110, 134);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 26);
-            this.textBox3.TabIndex = 10;
-            this.textBox3.UseWaitCursor = true;
+            this.txtTen_nhanvien.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.txtTen_nhanvien.Location = new System.Drawing.Point(110, 134);
+            this.txtTen_nhanvien.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTen_nhanvien.Multiline = true;
+            this.txtTen_nhanvien.Name = "txtTen_nhanvien";
+            this.txtTen_nhanvien.Size = new System.Drawing.Size(195, 26);
+            this.txtTen_nhanvien.TabIndex = 10;
+            this.txtTen_nhanvien.UseWaitCursor = true;
             // 
-            // textBox4
+            // txtMa_nhanvien
             // 
-            this.textBox4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.textBox4.Location = new System.Drawing.Point(110, 77);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(195, 26);
-            this.textBox4.TabIndex = 9;
-            this.textBox4.UseWaitCursor = true;
+            this.txtMa_nhanvien.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.txtMa_nhanvien.Location = new System.Drawing.Point(110, 77);
+            this.txtMa_nhanvien.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMa_nhanvien.Multiline = true;
+            this.txtMa_nhanvien.Name = "txtMa_nhanvien";
+            this.txtMa_nhanvien.Size = new System.Drawing.Size(195, 26);
+            this.txtMa_nhanvien.TabIndex = 9;
+            this.txtMa_nhanvien.UseWaitCursor = true;
             // 
             // button5
             // 
             this.button5.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.button5.Location = new System.Drawing.Point(255, 402);
+            this.button5.Location = new System.Drawing.Point(250, 402);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(56, 29);
+            this.button5.Size = new System.Drawing.Size(61, 29);
             this.button5.TabIndex = 8;
-            this.button5.Text = "Lưu";
+            this.button5.Text = "Thoát";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.UseWaitCursor = true;
             // 
             // button6
             // 
             this.button6.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.button6.Location = new System.Drawing.Point(175, 402);
+            this.button6.Location = new System.Drawing.Point(173, 402);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(56, 29);
@@ -583,64 +561,63 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "Thêm";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.UseWaitCursor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.UseWaitCursor = true;            // 
+            // btnXoaNV
             // 
-            // button8
+            this.btnXoaNV.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnXoaNV.Location = new System.Drawing.Point(14, 402);
+            this.btnXoaNV.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXoaNV.Name = "btnXoaNV";
+            this.btnXoaNV.Size = new System.Drawing.Size(56, 29);
+            this.btnXoaNV.TabIndex = 5;
+            this.btnXoaNV.Text = "Xóa";
+            this.btnXoaNV.UseVisualStyleBackColor = true;
+            this.btnXoaNV.UseWaitCursor = true;
             // 
-            this.button8.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.button8.Location = new System.Drawing.Point(14, 402);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(56, 29);
-            this.button8.TabIndex = 5;
-            this.button8.Text = "Xóa";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.UseWaitCursor = true;
+            // lblNgaysinh
             // 
-            // label6
+            this.lblNgaysinh.AutoSize = true;
+            this.lblNgaysinh.Location = new System.Drawing.Point(5, 241);
+            this.lblNgaysinh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNgaysinh.Name = "lblNgaysinh";
+            this.lblNgaysinh.Size = new System.Drawing.Size(85, 17);
+            this.lblNgaysinh.TabIndex = 4;
+            this.lblNgaysinh.Text = "Ngày sinh:";
+            this.lblNgaysinh.UseWaitCursor = true;
+            this.lblNgaysinh.Click += new System.EventHandler(this.label6_Click);
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(5, 241);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 17);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Ngày sinh:";
-            this.label6.UseWaitCursor = true;
+            // lblGioi_tinh
             // 
-            // label7
+            this.lblGioi_tinh.AutoSize = true;
+            this.lblGioi_tinh.Location = new System.Drawing.Point(5, 188);
+            this.lblGioi_tinh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGioi_tinh.Name = "lblGioi_tinh";
+            this.lblGioi_tinh.Size = new System.Drawing.Size(74, 17);
+            this.lblGioi_tinh.TabIndex = 3;
+            this.lblGioi_tinh.Text = "Giới tính:";
+            this.lblGioi_tinh.UseWaitCursor = true;
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(5, 188);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 17);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Giới tính:";
-            this.label7.UseWaitCursor = true;
+            // lblTen_nhanvien
             // 
-            // label8
+            this.lblTen_nhanvien.AutoSize = true;
+            this.lblTen_nhanvien.Location = new System.Drawing.Point(5, 136);
+            this.lblTen_nhanvien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTen_nhanvien.Name = "lblTen_nhanvien";
+            this.lblTen_nhanvien.Size = new System.Drawing.Size(117, 17);
+            this.lblTen_nhanvien.TabIndex = 2;
+            this.lblTen_nhanvien.Text = "Tên nhân viên:";
+            this.lblTen_nhanvien.UseWaitCursor = true;
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(5, 136);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(117, 17);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Tên nhân viên:";
-            this.label8.UseWaitCursor = true;
+            // lblMa_nhanvien
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(5, 80);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 17);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Mã nhân viên:";
-            this.label9.UseWaitCursor = true;
+            this.lblMa_nhanvien.AutoSize = true;
+            this.lblMa_nhanvien.Location = new System.Drawing.Point(5, 80);
+            this.lblMa_nhanvien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMa_nhanvien.Name = "lblMa_nhanvien";
+            this.lblMa_nhanvien.Size = new System.Drawing.Size(110, 17);
+            this.lblMa_nhanvien.TabIndex = 1;
+            this.lblMa_nhanvien.Text = "Mã nhân viên:";
+            this.lblMa_nhanvien.UseWaitCursor = true;
             // 
             // label10
             // 
@@ -671,6 +648,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.dvgNhanvien);
             this.panel2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.panel2.Location = new System.Drawing.Point(6, 23);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
@@ -820,7 +798,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(56, 29);
             this.button9.TabIndex = 8;
-            this.button9.Text = "Lưu";
+            this.button9.Text = "Thoát";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.UseWaitCursor = true;
             // 
@@ -1086,12 +1064,12 @@
             // button13
             // 
             this.button13.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.button13.Location = new System.Drawing.Point(255, 402);
+            this.button13.Location = new System.Drawing.Point(252, 402);
             this.button13.Margin = new System.Windows.Forms.Padding(2);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(56, 29);
+            this.button13.Size = new System.Drawing.Size(59, 29);
             this.button13.TabIndex = 8;
-            this.button13.Text = "Lưu";
+            this.button13.Text = "Thoát";
             this.button13.UseVisualStyleBackColor = true;
             this.button13.UseWaitCursor = true;
             // 
@@ -1300,7 +1278,7 @@
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(56, 29);
             this.button17.TabIndex = 8;
-            this.button17.Text = "Lưu";
+            this.button17.Text = "Thoát";
             this.button17.UseVisualStyleBackColor = true;
             this.button17.UseWaitCursor = true;
             // 
@@ -1399,6 +1377,21 @@
             this.panel5.TabIndex = 0;
             this.panel5.UseWaitCursor = true;
             // 
+            // dvgNhanvien
+            // 
+            this.dvgNhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgNhanvien.Location = new System.Drawing.Point(3, 3);
+            this.dvgNhanvien.Name = "dvgNhanvien";
+            this.dvgNhanvien.Size = new System.Drawing.Size(532, 465);
+            this.dvgNhanvien.TabIndex = 0;
+            // 
+            // dtpNgay_sinh
+            // 
+            this.dtpNgay_sinh.Location = new System.Drawing.Point(110, 241);
+            this.dtpNgay_sinh.Name = "dtpNgay_sinh";
+            this.dtpNgay_sinh.Size = new System.Drawing.Size(195, 23);
+            this.dtpNgay_sinh.TabIndex = 17;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1426,6 +1419,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -1438,6 +1432,7 @@
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dvgNhanvien)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1448,7 +1443,6 @@
         private System.Windows.Forms.TabPage QLPhong_tabPage;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtMa_phong;
-        private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
@@ -1466,23 +1460,22 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtTen_nhanvien;
+        private System.Windows.Forms.TextBox txtMa_nhanvien;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnXoaNV;
+        private System.Windows.Forms.Label lblNgaysinh;
+        private System.Windows.Forms.Label lblGioi_tinh;
+        private System.Windows.Forms.Label lblTen_nhanvien;
+        private System.Windows.Forms.Label lblMa_nhanvien;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ComboBox cmbGioi_tinh;
+        private System.Windows.Forms.Label lblSDT;
+        private System.Windows.Forms.Label lblDia_chi;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtDia_chi;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label13;
@@ -1543,5 +1536,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.DataGridView dvgPhong;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.DataGridView dvgNhanvien;
+        private System.Windows.Forms.DateTimePicker dtpNgay_sinh;
     }
 }
