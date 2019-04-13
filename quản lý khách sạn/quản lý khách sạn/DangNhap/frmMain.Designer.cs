@@ -50,6 +50,7 @@
             this.dvgPhong = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dtpNgay_sinh = new System.Windows.Forms.DateTimePicker();
             this.lblSDT = new System.Windows.Forms.Label();
             this.lblDia_chi = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
@@ -57,17 +58,18 @@
             this.cmbGioi_tinh = new System.Windows.Forms.ComboBox();
             this.txtTen_nhanvien = new System.Windows.Forms.TextBox();
             this.txtMa_nhanvien = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnThoatNV = new System.Windows.Forms.Button();
+            this.btnSuaNV = new System.Windows.Forms.Button();
+            this.btnThemNV = new System.Windows.Forms.Button();
             this.btnXoaNV = new System.Windows.Forms.Button();
             this.lblNgaysinh = new System.Windows.Forms.Label();
             this.lblGioi_tinh = new System.Windows.Forms.Label();
             this.lblTen_nhanvien = new System.Windows.Forms.Label();
             this.lblMa_nhanvien = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblThongtinnhanvien = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dvgNhanvien = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -126,8 +128,6 @@
             this.label33 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dvgNhanvien = new System.Windows.Forms.DataGridView();
-            this.dtpNgay_sinh = new System.Windows.Forms.DateTimePicker();
             this.tbcKhachsan.SuspendLayout();
             this.QLPhong_tabPage.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -138,6 +138,7 @@
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgNhanvien)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -147,7 +148,6 @@
             this.tabPage4.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgNhanvien)).BeginInit();
             this.SuspendLayout();
             // 
             // tbcKhachsan
@@ -404,6 +404,7 @@
             this.dvgPhong.Size = new System.Drawing.Size(532, 465);
             this.dvgPhong.TabIndex = 0;
             this.dvgPhong.UseWaitCursor = true;
+            this.dvgPhong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgPhong_CellContentClick);
             // 
             // tabPage1
             // 
@@ -429,15 +430,15 @@
             this.groupBox4.Controls.Add(this.cmbGioi_tinh);
             this.groupBox4.Controls.Add(this.txtTen_nhanvien);
             this.groupBox4.Controls.Add(this.txtMa_nhanvien);
-            this.groupBox4.Controls.Add(this.button5);
-            this.groupBox4.Controls.Add(this.button6);
-            this.groupBox4.Controls.Add(this.button7);
+            this.groupBox4.Controls.Add(this.btnThoatNV);
+            this.groupBox4.Controls.Add(this.btnSuaNV);
+            this.groupBox4.Controls.Add(this.btnThemNV);
             this.groupBox4.Controls.Add(this.btnXoaNV);
             this.groupBox4.Controls.Add(this.lblNgaysinh);
             this.groupBox4.Controls.Add(this.lblGioi_tinh);
             this.groupBox4.Controls.Add(this.lblTen_nhanvien);
             this.groupBox4.Controls.Add(this.lblMa_nhanvien);
-            this.groupBox4.Controls.Add(this.label10);
+            this.groupBox4.Controls.Add(this.lblThongtinnhanvien);
             this.groupBox4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(556, 14);
@@ -447,6 +448,14 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Thông tin chi tiết";
             this.groupBox4.UseWaitCursor = true;
+            // 
+            // dtpNgay_sinh
+            // 
+            this.dtpNgay_sinh.Location = new System.Drawing.Point(110, 241);
+            this.dtpNgay_sinh.Name = "dtpNgay_sinh";
+            this.dtpNgay_sinh.Size = new System.Drawing.Size(195, 23);
+            this.dtpNgay_sinh.TabIndex = 17;
+            this.dtpNgay_sinh.UseWaitCursor = true;
             // 
             // lblSDT
             // 
@@ -527,41 +536,42 @@
             this.txtMa_nhanvien.TabIndex = 9;
             this.txtMa_nhanvien.UseWaitCursor = true;
             // 
-            // button5
+            // btnThoatNV
             // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.button5.Location = new System.Drawing.Point(250, 402);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(61, 29);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Thoát";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.UseWaitCursor = true;
+            this.btnThoatNV.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnThoatNV.Location = new System.Drawing.Point(250, 402);
+            this.btnThoatNV.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThoatNV.Name = "btnThoatNV";
+            this.btnThoatNV.Size = new System.Drawing.Size(61, 29);
+            this.btnThoatNV.TabIndex = 8;
+            this.btnThoatNV.Text = "Thoát";
+            this.btnThoatNV.UseVisualStyleBackColor = true;
+            this.btnThoatNV.UseWaitCursor = true;
             // 
-            // button6
+            // btnSuaNV
             // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.button6.Location = new System.Drawing.Point(173, 402);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(56, 29);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Sửa";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.UseWaitCursor = true;
+            this.btnSuaNV.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnSuaNV.Location = new System.Drawing.Point(173, 402);
+            this.btnSuaNV.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSuaNV.Name = "btnSuaNV";
+            this.btnSuaNV.Size = new System.Drawing.Size(56, 29);
+            this.btnSuaNV.TabIndex = 7;
+            this.btnSuaNV.Text = "Sửa";
+            this.btnSuaNV.UseVisualStyleBackColor = true;
+            this.btnSuaNV.UseWaitCursor = true;
             // 
-            // button7
+            // btnThemNV
             // 
-            this.button7.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.button7.Location = new System.Drawing.Point(91, 402);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(56, 29);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Thêm";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.UseWaitCursor = true;            // 
+            this.btnThemNV.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnThemNV.Location = new System.Drawing.Point(91, 402);
+            this.btnThemNV.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThemNV.Name = "btnThemNV";
+            this.btnThemNV.Size = new System.Drawing.Size(56, 29);
+            this.btnThemNV.TabIndex = 6;
+            this.btnThemNV.Text = "Thêm";
+            this.btnThemNV.UseVisualStyleBackColor = true;
+            this.btnThemNV.UseWaitCursor = true;
+            // 
             // btnXoaNV
             // 
             this.btnXoaNV.Cursor = System.Windows.Forms.Cursors.WaitCursor;
@@ -619,18 +629,18 @@
             this.lblMa_nhanvien.Text = "Mã nhân viên:";
             this.lblMa_nhanvien.UseWaitCursor = true;
             // 
-            // label10
+            // lblThongtinnhanvien
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(87, 40);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(205, 20);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "THÔNG TIN NHÂN VIÊN";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.UseWaitCursor = true;
+            this.lblThongtinnhanvien.AutoSize = true;
+            this.lblThongtinnhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThongtinnhanvien.ForeColor = System.Drawing.Color.Red;
+            this.lblThongtinnhanvien.Location = new System.Drawing.Point(87, 40);
+            this.lblThongtinnhanvien.Name = "lblThongtinnhanvien";
+            this.lblThongtinnhanvien.Size = new System.Drawing.Size(205, 20);
+            this.lblThongtinnhanvien.TabIndex = 0;
+            this.lblThongtinnhanvien.Text = "THÔNG TIN NHÂN VIÊN";
+            this.lblThongtinnhanvien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblThongtinnhanvien.UseWaitCursor = true;
             // 
             // groupBox3
             // 
@@ -656,6 +666,15 @@
             this.panel2.Size = new System.Drawing.Size(538, 471);
             this.panel2.TabIndex = 0;
             this.panel2.UseWaitCursor = true;
+            // 
+            // dvgNhanvien
+            // 
+            this.dvgNhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgNhanvien.Location = new System.Drawing.Point(3, 3);
+            this.dvgNhanvien.Name = "dvgNhanvien";
+            this.dvgNhanvien.Size = new System.Drawing.Size(532, 465);
+            this.dvgNhanvien.TabIndex = 0;
+            this.dvgNhanvien.UseWaitCursor = true;
             // 
             // tabPage2
             // 
@@ -1377,21 +1396,6 @@
             this.panel5.TabIndex = 0;
             this.panel5.UseWaitCursor = true;
             // 
-            // dvgNhanvien
-            // 
-            this.dvgNhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgNhanvien.Location = new System.Drawing.Point(3, 3);
-            this.dvgNhanvien.Name = "dvgNhanvien";
-            this.dvgNhanvien.Size = new System.Drawing.Size(532, 465);
-            this.dvgNhanvien.TabIndex = 0;
-            // 
-            // dtpNgay_sinh
-            // 
-            this.dtpNgay_sinh.Location = new System.Drawing.Point(110, 241);
-            this.dtpNgay_sinh.Name = "dtpNgay_sinh";
-            this.dtpNgay_sinh.Size = new System.Drawing.Size(195, 23);
-            this.dtpNgay_sinh.TabIndex = 17;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1420,6 +1424,7 @@
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dvgNhanvien)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -1432,7 +1437,6 @@
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dvgNhanvien)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1462,15 +1466,15 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox txtTen_nhanvien;
         private System.Windows.Forms.TextBox txtMa_nhanvien;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnThoatNV;
+        private System.Windows.Forms.Button btnSuaNV;
+        private System.Windows.Forms.Button btnThemNV;
         private System.Windows.Forms.Button btnXoaNV;
         private System.Windows.Forms.Label lblNgaysinh;
         private System.Windows.Forms.Label lblGioi_tinh;
         private System.Windows.Forms.Label lblTen_nhanvien;
         private System.Windows.Forms.Label lblMa_nhanvien;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblThongtinnhanvien;
         private System.Windows.Forms.ComboBox cmbGioi_tinh;
         private System.Windows.Forms.Label lblSDT;
         private System.Windows.Forms.Label lblDia_chi;

@@ -97,5 +97,24 @@ namespace quản_lý_khách_sạn.DangNhap
         {
 
         }
+
+        private void dvgPhong_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            /*int i;
+            i = dvgĐc_Mừng.CurrentRow.Index;
+            txtTen.Text = dvgĐc_Mừng.Rows[i].Cells[1].Value.ToString();
+            txtĐịa_chỉ.Text = dvgĐc_Mừng.Rows[i].Cells[2].Value.ToString();
+            txtSo_tien.Text = dvgĐc_Mừng.Rows[i].Cells[3].Value.ToString();
+            txtNam.Text = dvgĐc_Mừng.Rows[i].Cells[4].Value.ToString();
+            txtGhi_chu.Text = dvgĐc_Mừng.Rows[i].Cells[5].Value.ToString();
+            */
+
+            int i;
+            i = dvgPhong.CurrentRow.Index;
+            txtMa_phong.Text = dvgPhong.Rows[i].Cells[0].Value.ToString();
+            txtTen_phong.Text = dvgPhong.Rows[i].Cells[1].Value.ToString();
+            cmbLoai_phong.Text = dvgPhong.Rows[i].Cells[2].Value.ToString();
+            cmbTinh_trang.Text = dvgPhong.Rows[i].Cells[3].Value.ToString();
+        }
     }
 }
