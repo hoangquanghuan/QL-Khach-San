@@ -32,6 +32,7 @@
             this.tbcKhachsan = new System.Windows.Forms.TabControl();
             this.QLPhong_tabPage = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.cmbTinh_trang = new System.Windows.Forms.ComboBox();
             this.cmbLoai_phong = new System.Windows.Forms.ComboBox();
             this.txtTen_phong = new System.Windows.Forms.TextBox();
@@ -127,7 +128,6 @@
             this.label33 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnThoat = new System.Windows.Forms.Button();
             this.tbcKhachsan.SuspendLayout();
             this.QLPhong_tabPage.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -209,14 +209,27 @@
             this.groupBox2.Text = "Thông tin chi tiết";
             this.groupBox2.UseWaitCursor = true;
             // 
+            // btnThoat
+            // 
+            this.btnThoat.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnThoat.Location = new System.Drawing.Point(126, 407);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(64, 29);
+            this.btnThoat.TabIndex = 13;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseWaitCursor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
             // cmbTinh_trang
             // 
             this.cmbTinh_trang.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.cmbTinh_trang.FormattingEnabled = true;
             this.cmbTinh_trang.Items.AddRange(new object[] {
-            "Trống",
-            "Đang sử dụng",
-            "Đang sửa chữa"});
+            "1",
+            "2",
+            "3"});
             this.cmbTinh_trang.Location = new System.Drawing.Point(100, 242);
             this.cmbTinh_trang.Name = "cmbTinh_trang";
             this.cmbTinh_trang.Size = new System.Drawing.Size(205, 25);
@@ -229,8 +242,8 @@
             this.cmbLoai_phong.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.cmbLoai_phong.FormattingEnabled = true;
             this.cmbLoai_phong.Items.AddRange(new object[] {
-            "Vip",
-            "Thường"});
+            "1",
+            "2"});
             this.cmbLoai_phong.Location = new System.Drawing.Point(100, 190);
             this.cmbLoai_phong.Name = "cmbLoai_phong";
             this.cmbLoai_phong.Size = new System.Drawing.Size(205, 25);
@@ -283,6 +296,7 @@
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.UseWaitCursor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -308,6 +322,7 @@
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.UseWaitCursor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // label5
             // 
@@ -1383,19 +1398,6 @@
             this.panel5.Size = new System.Drawing.Size(538, 471);
             this.panel5.TabIndex = 0;
             this.panel5.UseWaitCursor = true;
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.btnThoat.Location = new System.Drawing.Point(126, 407);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(64, 29);
-            this.btnThoat.TabIndex = 13;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.UseWaitCursor = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // frmMain
             // 

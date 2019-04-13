@@ -14,8 +14,9 @@ namespace DAO
         public DataTable getPhong()
         {
             conn.Open();
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM dbo.PHONG", conn);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MAPHONG, TENPHONG, TEN_LP, TEN_TT, GIA FROM dbo.PHONG, dbo.LOAIPHONG, dbo.TRANGTHAI WHERE dbo.PHONG.MA_LP = dbo.LOAIPHONG.MA_LP AND dbo.PHONG.MA_TT = dbo.TRANGTHAI.MA_TT", conn);
             DataTable dt = new DataTable();
+           // DataSet ds = new DataSet();
             da.Fill(dt);
             conn.Close();
             return dt;
@@ -25,8 +26,10 @@ namespace DAO
         {
             try
             {
-                conn.Open();
-                string SQL = @"INSERT INTO dbo.PHONG ( MAPHONG, TENPHONG, MA_LP, MA_TT ) VALUES  ('"+p.MA_PHONG+ "','" + p.TEN_PHONG + ",'" + p.MA_LP + ",'" + p.MA_TT + ")";
+                //conn.Open();
+                string SQL = string.Format(
+                    "INSERT INTO dbo.PHONG ( MAPHONG, TENPHONG, MA_LP, MA_TT ) VALUES  ('{0}',N'{1}',N'{2}',N'{3}')"
+                    , p.MA_PHONG, p.TEN_PHONG, p.MA_LP, p.MA_TT);
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 int kq = (int)cmd.ExecuteNonQuery();
                 if (kq > 0)
@@ -35,7 +38,7 @@ namespace DAO
             }
             catch(Exception ex)
             {
-                
+                throw ex;
             }
             finally
             {
@@ -48,7 +51,9 @@ namespace DAO
             try
             {
                 conn.Open();
-                string SQL = @"UPDATE dbo.PHONG SET MAPHONG='"+p.MA_PHONG+"',TENPHONG='"+p.TEN_PHONG+"',MA_LP='"+p.MA_LP+"',MA_TT='"+p.MA_TT+"'";
+                string SQL = string.Format(
+                    "UPDATE dbo.PHONG SET TENPHONG='{0}',MA_LP='{1}',MA_TT='{2}' where MAPHONG='{3}'",
+                    p.TEN_PHONG,p.MA_LP,p.MA_TT, p.MA_PHONG);
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 int kq = cmd.ExecuteNonQuery();
                 if (kq > 0)
@@ -66,12 +71,12 @@ namespace DAO
             return false;
         }
 
-        public bool xoaPhong(string maphong)
+        public bool xoaPhong(DTO_Phong p)
         {
             try
             {
                 conn.Open();
-                string SQL = @"DELETE dbo.PHONG WHERE MAPHONG='"+maphong+"'";
+                string SQL = string.Format("DELETE dbo.PHONG WHERE MAPHONG='{0}'",p.MA_PHONG);
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 int kq = cmd.ExecuteNonQuery();
                 if (kq > 0)

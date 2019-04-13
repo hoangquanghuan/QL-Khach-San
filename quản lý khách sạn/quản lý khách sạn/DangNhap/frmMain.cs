@@ -37,7 +37,7 @@ namespace quản_lý_khách_sạn.DangNhap
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(txtMa_phong.Text!=""&&txtTen_phong.Text!="")
+             if(txtMa_phong.Text!=" "&&txtTen_phong.Text!=" "&&cmbLoai_phong.Text!=" "&&cmbTinh_trang.Text!=" ")
             {
                 DTO_Phong phong = new DTO_Phong(txtMa_phong.Text, txtTen_phong.Text,cmbLoai_phong.Text,cmbTinh_trang.Text);
                 // thêm
@@ -65,6 +65,36 @@ namespace quản_lý_khách_sạn.DangNhap
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            DTO_Phong phong = new DTO_Phong(txtMa_phong.Text, txtTen_phong.Text, cmbLoai_phong.Text, cmbTinh_trang.Text);
+            // thêm
+            if (bus_phong.suaPhong(phong))
+            {
+                MessageBox.Show("sửa thành công");
+                dvgPhong.DataSource = bus_phong.getPhong();
+            }
+            else
+            {
+                MessageBox.Show("sửa không thành công");
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DTO_Phong phong = new DTO_Phong(txtMa_phong.Text, txtTen_phong.Text, cmbLoai_phong.Text, cmbTinh_trang.Text);
+            // thêm
+            if (bus_phong.xoaPhong(phong))
+            {
+                MessageBox.Show("xóa thành công");
+                dvgPhong.DataSource = bus_phong.getPhong();
+            }
+            else
+            {
+                MessageBox.Show("xóa không thành công");
+            }
         }
     }
 }

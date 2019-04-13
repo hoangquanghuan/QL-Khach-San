@@ -12,6 +12,7 @@ namespace BUS
     public class BUS_Phong
     {
         DAO_Phong dao_phong = new DAO_Phong();
+        //DTO_Phong m = new DTO_Phong();
 
         public DataTable getPhong()
         {
@@ -26,9 +27,9 @@ namespace BUS
         {
             return dao_phong.suaPhong(p);
         }
-        public bool xoaPhong(string maphong)
+        public bool xoaPhong(DTO_Phong p )
         {
-            return dao_phong.xoaPhong(maphong);
+            return dao_phong.xoaPhong(p);
         }
 
     }
