@@ -92,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -103,9 +104,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="anh\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{1c9a5501-0d09-4086-8127-1ab90b9d58c0}</Project>
@@ -115,6 +114,21 @@
       <Project>{3e354465-62d2-461c-b089-19749a51aae5}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DangNhap\imgs\if_09_Examination_2064484.png" />
+    <Content Include="DangNhap\imgs\if_5_Bag_school_bag_student_bag_2990994.png" />
+    <Content Include="DangNhap\imgs\if_brush-pencil_1055103.png" />
+    <Content Include="DangNhap\imgs\if_Download_3336950.png" />
+    <Content Include="DangNhap\imgs\if_meanicons_24_197210.png" />
+    <Content Include="DangNhap\imgs\if_Plus_206460.png" />
+    <Content Include="DangNhap\imgs\if_Student-3_379383.png" />
+    <Content Include="DangNhap\imgs\if_student_309036.png" />
+    <Content Include="DangNhap\imgs\if_student_b_45097.png" />
+    <Content Include="DangNhap\imgs\if_student_icon_1741314.png" />
+    <Content Include="DangNhap\imgs\kisspng-computer-icons-user-person-clip-art-people-icon-5abe2b26ab4c86.6804605215224123267017.jpg" />
+    <Content Include="DangNhap\imgs\students-512.ico" />
+    <None Include="Image\if_Student-3_379383.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

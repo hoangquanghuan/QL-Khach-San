@@ -23,15 +23,7 @@ namespace quản_lý_khách_sạn.DangNhap
             public static string Password;
         }
 
-        private void lblQuenMatKhau_MouseMove(object sender, MouseEventArgs e)
-        {
-            QuenMK_label.ForeColor = Color.Red;
-        }
-
-        private void lblQuenMatKhau_MouseLeave(object sender, EventArgs e)
-        {
-            QuenMK_label.ForeColor = Color.Black;
-        }
+        
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
