@@ -17,6 +17,7 @@ namespace quản_lý_khách_sạn.DangNhap
         BUS_Phong bus_phong = new BUS_Phong();
         BUS_nhanvien bus_nhanvien = new BUS_nhanvien();
         BUS_khachhang bus_khachhang = new BUS_khachhang();
+        BUS_dichvu bus_dichvu = new BUS_dichvu();
         public frmMain()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace quản_lý_khách_sạn.DangNhap
             dvgPhong.DataSource = bus_phong.getPhong();
             dvgNhanvien.DataSource = bus_nhanvien.getNhanvien();
             dvgKhachhang.DataSource = bus_khachhang.getKhachhang();
+            dvgDichvu.DataSource = bus_dichvu.getDichvu();
         }
         
         private void button2_Click(object sender, EventArgs e)
@@ -261,5 +263,63 @@ namespace quản_lý_khách_sạn.DangNhap
         private void btnThoatHD_Click(object sender, EventArgs e)
         {
             Application.Exit();        }
+
+        private void btnThoat_dv_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnThem_dv_Click(object sender, EventArgs e)
+        {
+            if (txtMa_dv.Text!=""&&txtTendv.Text!=""&&txtGia.Text!="")
+            {
+                DTO_dichvu dichvu = new DTO_dichvu(txtMa_dv.Text,txtTendv.Text,txtGia.Text);
+                // thêm
+                if (bus_dichvu.themDichvu(dichvu))
+                {
+                    MessageBox.Show("thêm thành công");
+                    dvgDichvu.DataSource = bus_dichvu.getDichvu();
+                }
+                else
+                {
+                    MessageBox.Show("thêm không thành công");
+                }
+            }
+            else
+            {
+                MessageBox.Show("xin vui lòng nhập đủ thông tin");
+            }
+        }
+
+        private void btnSua_dv_Click(object sender, EventArgs e)
+        {
+
+            DTO_dichvu dichvu = new DTO_dichvu(txtMa_dv.Text, txtTendv.Text, txtGia.Text);
+
+            if (bus_dichvu.suaDichvu(dichvu))
+            {
+                MessageBox.Show("sửa thành công");
+                dvgDichvu.DataSource = bus_dichvu.getDichvu();
+            }
+            else
+            {
+                MessageBox.Show("sửa không thành công");
+            }
+        }
+
+        private void btnXoa_dv_Click(object sender, EventArgs e)
+        {
+            DTO_dichvu dichvu = new DTO_dichvu(txtMa_dv.Text, txtTendv.Text, txtGia.Text);
+
+            if (bus_dichvu.xoaDichvu(dichvu))
+            {
+                MessageBox.Show("xóa thành công");
+                dvgDichvu.DataSource = bus_dichvu.getDichvu();
+            }
+            else
+            {
+                MessageBox.Show("xóa không thành công");
+            }
+        }
     }
 }
