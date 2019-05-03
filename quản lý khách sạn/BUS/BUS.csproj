@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS_dichvu.cs" />
+    <Compile Include="BUS_hoadon.cs" />
     <Compile Include="BUS_khachhang.cs" />
     <Compile Include="BUS_nhanvien.cs" />
     <Compile Include="BUS_Phong.cs" />

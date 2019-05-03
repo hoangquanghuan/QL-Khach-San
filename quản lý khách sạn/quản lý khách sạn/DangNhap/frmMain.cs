@@ -18,6 +18,7 @@ namespace quản_lý_khách_sạn.DangNhap
         BUS_nhanvien bus_nhanvien = new BUS_nhanvien();
         BUS_khachhang bus_khachhang = new BUS_khachhang();
         BUS_dichvu bus_dichvu = new BUS_dichvu();
+        BUS_hoadon bus_hoadon = new BUS_hoadon();
         public frmMain()
         {
             InitializeComponent();
@@ -29,6 +30,7 @@ namespace quản_lý_khách_sạn.DangNhap
             dvgNhanvien.DataSource = bus_nhanvien.getNhanvien();
             dvgKhachhang.DataSource = bus_khachhang.getKhachhang();
             dvgDichvu.DataSource = bus_dichvu.getDichvu();
+            dvgHoa_don.DataSource = bus_hoadon.getHoadon();
         }
         
         private void button2_Click(object sender, EventArgs e)
@@ -319,6 +321,61 @@ namespace quản_lý_khách_sạn.DangNhap
             else
             {
                 MessageBox.Show("xóa không thành công");
+            }
+        }
+
+        private void dvgDichvu_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            i = dvgDichvu.CurrentRow.Index;
+            txtMa_dv.Text = dvgDichvu.Rows[i].Cells[0].Value.ToString();
+            txtTendv.Text = dvgDichvu.Rows[i].Cells[1].Value.ToString();
+            txtGia.Text = dvgDichvu.Rows[i].Cells[2].Value.ToString();
+           
+        }
+
+        private void btnTimKiemNV_Click(object sender, EventArgs e)
+        {
+            if (txtTimKiemNV.Text!="")
+            {
+                DTO_nhanvien nhanvien = new DTO_nhanvien(txtTimKiemNV.Text);
+                // tìm kiếm
+                if (bus_nhanvien.TimKiemNV(nhanvien))
+                {
+                    dvgNhanvien.DataSource = bus_nhanvien.getNhanvien();
+                }
+                else
+                {
+                    MessageBox.Show("không tìm thấy!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("xin vui lòng nhập tên Nhân Viên cần Tìm!");
+            }
+        }
+
+        private void btnThemHD_Click(object sender, EventArgs e)
+        {
+            if (txtMa_HD.Text != " " && txtNgay_TT.Text != " "
+               && txtHinh_thuc.Text != " " && txtP.Text != " " &&txtMa_KH_HD.Text != ""
+               && txtMa_NV_HD.Text != "" && txtDv.Text != "")
+            {
+                DTO_hoadon hoadon = new DTO_hoadon(txtMa_HD.Text, txtMa_NV_HD.Text, txtMa_KH_HD.Text, txtNgay_TT.Text, txtHinh_thuc.Text,txtTong.Text, txtP.Text, txtDv.Text);
+                // thêm
+                if (bus_hoadon.themHoadon(hoadon))
+                {
+                    MessageBox.Show("thêm thành công");
+                    dvgHoa_don.DataSource = bus_hoadon.getHoadon();
+                }
+                else
+                {
+                    MessageBox.Show("thêm không thành công");
+                }
+            }
+            else
+            {
+                MessageBox.Show("xin vui lòng nhập đủ thông tin");
             }
         }
     }

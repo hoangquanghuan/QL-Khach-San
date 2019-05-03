@@ -32,5 +32,10 @@ namespace BUS
         {
             return dao_nhanvien.xoaNhanvien(nv);
         }
+
+        public bool TimKiemNV(DTO_nhanvien nv)
+        {
+            return dao_nhanvien.TimKiemNV(nv);
+        }
     }
 }

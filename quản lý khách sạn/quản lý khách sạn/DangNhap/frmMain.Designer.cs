@@ -50,6 +50,9 @@
             this.dvgPhong = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtTimKiemNV = new System.Windows.Forms.TextBox();
+            this.lblNhapTenNV = new System.Windows.Forms.Label();
+            this.btnTimKiemNV = new System.Windows.Forms.Button();
             this.txtNgaysinh = new System.Windows.Forms.TextBox();
             this.lblSDT = new System.Windows.Forms.Label();
             this.lblDia_chi = new System.Windows.Forms.Label();
@@ -452,6 +455,9 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.LightGray;
+            this.groupBox4.Controls.Add(this.txtTimKiemNV);
+            this.groupBox4.Controls.Add(this.lblNhapTenNV);
+            this.groupBox4.Controls.Add(this.btnTimKiemNV);
             this.groupBox4.Controls.Add(this.txtNgaysinh);
             this.groupBox4.Controls.Add(this.lblSDT);
             this.groupBox4.Controls.Add(this.lblDia_chi);
@@ -473,11 +479,46 @@
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(572, 14);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(324, 494);
+            this.groupBox4.Size = new System.Drawing.Size(324, 498);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Thông tin chi tiết";
             this.groupBox4.UseWaitCursor = true;
+            // 
+            // txtTimKiemNV
+            // 
+            this.txtTimKiemNV.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.txtTimKiemNV.Location = new System.Drawing.Point(111, 451);
+            this.txtTimKiemNV.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTimKiemNV.Multiline = true;
+            this.txtTimKiemNV.Name = "txtTimKiemNV";
+            this.txtTimKiemNV.Size = new System.Drawing.Size(106, 26);
+            this.txtTimKiemNV.TabIndex = 20;
+            this.txtTimKiemNV.UseWaitCursor = true;
+            // 
+            // lblNhapTenNV
+            // 
+            this.lblNhapTenNV.Location = new System.Drawing.Point(13, 454);
+            this.lblNhapTenNV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNhapTenNV.Name = "lblNhapTenNV";
+            this.lblNhapTenNV.Size = new System.Drawing.Size(94, 19);
+            this.lblNhapTenNV.TabIndex = 19;
+            this.lblNhapTenNV.Text = "Nhập Tên:";
+            this.lblNhapTenNV.UseWaitCursor = true;
+            // 
+            // btnTimKiemNV
+            // 
+            this.btnTimKiemNV.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnTimKiemNV.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnTimKiemNV.Location = new System.Drawing.Point(230, 448);
+            this.btnTimKiemNV.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTimKiemNV.Name = "btnTimKiemNV";
+            this.btnTimKiemNV.Size = new System.Drawing.Size(75, 29);
+            this.btnTimKiemNV.TabIndex = 18;
+            this.btnTimKiemNV.Text = "Search";
+            this.btnTimKiemNV.UseVisualStyleBackColor = false;
+            this.btnTimKiemNV.UseWaitCursor = true;
+            this.btnTimKiemNV.Click += new System.EventHandler(this.btnTimKiemNV_Click);
             // 
             // txtNgaysinh
             // 
@@ -573,7 +614,7 @@
             // 
             this.btnThoatNV.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnThoatNV.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.btnThoatNV.Location = new System.Drawing.Point(244, 411);
+            this.btnThoatNV.Location = new System.Drawing.Point(244, 402);
             this.btnThoatNV.Margin = new System.Windows.Forms.Padding(2);
             this.btnThoatNV.Name = "btnThoatNV";
             this.btnThoatNV.Size = new System.Drawing.Size(61, 29);
@@ -587,7 +628,7 @@
             // 
             this.btnSuaNV.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSuaNV.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.btnSuaNV.Location = new System.Drawing.Point(169, 411);
+            this.btnSuaNV.Location = new System.Drawing.Point(169, 402);
             this.btnSuaNV.Margin = new System.Windows.Forms.Padding(2);
             this.btnSuaNV.Name = "btnSuaNV";
             this.btnSuaNV.Size = new System.Drawing.Size(56, 29);
@@ -601,7 +642,7 @@
             // 
             this.btnThemNV.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnThemNV.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.btnThemNV.Location = new System.Drawing.Point(91, 411);
+            this.btnThemNV.Location = new System.Drawing.Point(91, 402);
             this.btnThemNV.Margin = new System.Windows.Forms.Padding(2);
             this.btnThemNV.Name = "btnThemNV";
             this.btnThemNV.Size = new System.Drawing.Size(56, 29);
@@ -615,7 +656,7 @@
             // 
             this.btnXoaNV.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnXoaNV.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.btnXoaNV.Location = new System.Drawing.Point(16, 411);
+            this.btnXoaNV.Location = new System.Drawing.Point(16, 402);
             this.btnXoaNV.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoaNV.Name = "btnXoaNV";
             this.btnXoaNV.Size = new System.Drawing.Size(56, 29);
@@ -1075,6 +1116,7 @@
             this.btnThemHD.Text = "Thêm";
             this.btnThemHD.UseVisualStyleBackColor = false;
             this.btnThemHD.UseWaitCursor = true;
+            this.btnThemHD.Click += new System.EventHandler(this.btnThemHD_Click);
             // 
             // groupBox7
             // 
@@ -1230,6 +1272,8 @@
             this.txtTong.Name = "txtTong";
             this.txtTong.Size = new System.Drawing.Size(121, 22);
             this.txtTong.TabIndex = 11;
+            this.txtTong.Text = "0";
+            this.txtTong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtTong.UseWaitCursor = true;
             // 
             // txtDv
@@ -1574,13 +1618,15 @@
             this.dvgDichvu.Name = "dvgDichvu";
             this.dvgDichvu.Size = new System.Drawing.Size(532, 465);
             this.dvgDichvu.TabIndex = 0;
+            this.dvgDichvu.UseWaitCursor = true;
+            this.dvgDichvu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgDichvu_CellContentClick);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(921, 538);
+            this.ClientSize = new System.Drawing.Size(921, 545);
             this.Controls.Add(this.tbcKhachsan);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ForeColor = System.Drawing.Color.Black;
@@ -1589,7 +1635,7 @@
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quản Lý Khách Sạn (Adminstrator)";
+            this.Text = "Ứng Dụng Quản Lý Khách Sạn";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.tbcKhachsan.ResumeLayout(false);
             this.QLPhong_tabPage.ResumeLayout(false);
@@ -1746,5 +1792,8 @@
         private System.Windows.Forms.TextBox txtTen_KH_HD;
         private System.Windows.Forms.TextBox txtMa_KH_HD;
         private System.Windows.Forms.DataGridView dvgDichvu;
+        private System.Windows.Forms.Label lblNhapTenNV;
+        private System.Windows.Forms.Button btnTimKiemNV;
+        private System.Windows.Forms.TextBox txtTimKiemNV;
     }
 }

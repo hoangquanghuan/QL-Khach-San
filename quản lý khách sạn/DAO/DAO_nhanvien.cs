@@ -96,5 +96,31 @@ namespace DAO
             }
             return false;
         }
+
+        public bool TimKiemNV(DTO_nhanvien nv)
+        {
+            try
+            {
+                conn.Open();
+                string SQL = string.Format(
+                    "SELECT * FROM dbo.NHANVIEN WHERE HT_NV LIKE N'%{0}'",nv.TK);
+                SqlCommand cmd = new SqlCommand(SQL, conn);
+                int kq = cmd.ExecuteNonQuery();
+                if (kq > 0)
+                    return true;
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return false;
+
+        }
+
     }
 }
