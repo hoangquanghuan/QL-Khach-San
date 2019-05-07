@@ -16,25 +16,15 @@ namespace quản_lý_khách_sạn.DangNhap
         {
             InitializeComponent();
         }
-
         public class GetUserAndPassword
         {
             public static string Username;
             public static string Password;
         }
-
-        
-
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Thoat_button_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void DangNhap_button_Click(object sender, EventArgs e)
         {
             if (NhapUser_textBox.Text == "" && NhapPass_textBox.Text == "")
@@ -71,10 +61,6 @@ namespace quản_lý_khách_sạn.DangNhap
                 }
             }
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
     }
 }

@@ -24,6 +24,16 @@ namespace BUS
             return dao_hoadon.themHoaDon(hd);
         }
 
+        public bool suaHoaDon(DTO_hoadon hd)
+        {
+            return dao_hoadon.suaHoaDon(hd);
+        }
+
+        public bool xoaHoaDon(DTO_hoadon hd)
+        {
+            return dao_hoadon.xoaHoaDon(hd);
+        }
+
 
     }
 }

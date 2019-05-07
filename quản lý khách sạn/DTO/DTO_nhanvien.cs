@@ -16,18 +16,9 @@ namespace DTO
         private string _DC;
         private string _SDT;
 
-
-        private string _TK;
-
-
         // các hàm khởi tạo
         public DTO_nhanvien()
         {}
-
-        public DTO_nhanvien(string TK)
-        {
-            this._TK = TK;
-        }
         public DTO_nhanvien(string MA_NV,string HOTEN_NV,string GT,string NS,string DC,string SDT)
         {
             this._MA_NHANVIEN = MA_NV;
@@ -37,19 +28,6 @@ namespace DTO
             this._DC = DC;
             this._SDT = SDT;
         }
-
-        public string TK
-        {
-            get
-            {
-                return _TK;
-            }
-            set
-            {
-                _TK = value;
-            }
-        }
-
         public string MA_NV
         {
             get

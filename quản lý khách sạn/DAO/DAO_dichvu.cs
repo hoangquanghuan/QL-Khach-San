@@ -13,7 +13,8 @@ namespace DAO
     {
         public DataTable getDichvu()
         {
-            string kn = @"SELECT * FROM dbo.DICHVU";
+            string kn = @" SELECT MA_DV as'Mã DV',TEN_DV as'Tên DV',GIA as'Giá'
+                            FROM dbo.DICHVU";
             conn.Open();
             SqlDataAdapter da = new SqlDataAdapter(kn, conn);
             DataTable dt = new DataTable();
@@ -63,7 +64,7 @@ namespace DAO
             }
             catch (Exception ex)
             {
-
+                throw ex;
             }
             finally
             {
@@ -86,7 +87,7 @@ namespace DAO
             }
             catch (Exception ex)
             {
-
+                throw ex;
             }
             finally
             {

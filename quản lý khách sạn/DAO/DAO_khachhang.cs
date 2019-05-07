@@ -14,7 +14,9 @@ namespace DAO
         public DataTable getKhachhang()
         {
             conn.Open();
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM dbo.KHACHHANG",conn);
+            string kn = @"SELECT MA_KH as'Mã Khách',HT_KH as'Họ Tên',NS as'Ngày Sinh',GT as'Giới Tính',CMND as'Số CMND',SDT as'SĐT'
+                            FROM dbo.KHACHHANG";
+            SqlDataAdapter da = new SqlDataAdapter(kn,conn);
             DataTable dt = new DataTable();
             da.Fill(dt);
 
@@ -38,7 +40,7 @@ namespace DAO
             }
             catch (Exception ex)
             {
-
+                throw ex;
             }
             finally
             {
@@ -63,7 +65,7 @@ namespace DAO
             }
             catch (Exception ex)
             {
-
+                throw ex;
             }
             finally
             {
@@ -87,7 +89,7 @@ namespace DAO
             }
             catch (Exception ex)
             {
-
+                throw ex;
             }
             finally
             {
@@ -95,6 +97,20 @@ namespace DAO
             }
             return false;
         }
+
+        public DataTable TimKiemKH(DTO_khachhang kh)
+        {
+            conn.Open();
+            string SQL = string.Format(
+                "SELECT MA_KH as'Mã Khách',HT_KH as'Họ Tên',NS as'Ngày Sinh',GT as'Giới Tính',CMND as'Số CMND',SDT as'SĐT' FROM dbo.KHACHHANG WHERE HT_KH LIKE N'%{0}%'", kh.HT_KH);
+            //SqlCommand cmd = new SqlCommand(SQL, conn);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(SQL, conn);
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+
 
     }
 }

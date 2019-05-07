@@ -14,14 +14,15 @@ namespace DAO
         public DataTable getNhanvien()
         {
             conn.Open();
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM dbo.NHANVIEN", conn);
+            string kn = @"SELECT MA_NV as'Mã NV',HT_NV as'Họ Tên',GT as'Giới Tính',NS as'Ngày Sinh',DC as'Địa Chỉ',SDT as'SĐT'
+                           FROM dbo.NHANVIEN";
+            SqlDataAdapter da = new SqlDataAdapter(kn, conn);
             DataTable dt = new DataTable();
             da.Fill(dt);
             
             conn.Close();
             return dt;
         }
-
         public bool themNhanvien(DTO_nhanvien nv)
         {
             try
@@ -34,11 +35,10 @@ namespace DAO
                 int kq = (int)cmd.ExecuteNonQuery();
                 if (kq > 0)
                     return true;
-
             }
             catch (Exception ex)
             {
-                
+                throw ex;
             }
             finally
             {
@@ -46,7 +46,6 @@ namespace DAO
             }
             return false;
         }
-
         public bool suaNhanvien(DTO_nhanvien nv)
         {
             try
@@ -59,21 +58,17 @@ namespace DAO
                 int kq = cmd.ExecuteNonQuery();
                 if (kq > 0)
                     return true;
-
             }
             catch (Exception ex)
             {
-
+                throw ex;
             }
             finally
             {
                 conn.Close();
             }
             return false;
-
         }
-
-
         public bool xoaNhanvien(DTO_nhanvien nv)
         {
             try
@@ -84,11 +79,10 @@ namespace DAO
                 int kq = cmd.ExecuteNonQuery();
                 if (kq > 0)
                     return true;
-
             }
             catch (Exception ex)
             {
-
+                throw ex;
             }
             finally
             {
@@ -96,30 +90,17 @@ namespace DAO
             }
             return false;
         }
-
-        public bool TimKiemNV(DTO_nhanvien nv)
+        public DataTable TimKiemNV(DTO_nhanvien nv)
         {
-            try
-            {
-                conn.Open();
-                string SQL = string.Format(
-                    "SELECT * FROM dbo.NHANVIEN WHERE HT_NV LIKE N'%{0}'",nv.TK);
-                SqlCommand cmd = new SqlCommand(SQL, conn);
-                int kq = cmd.ExecuteNonQuery();
-                if (kq > 0)
-                    return true;
-
-            }
-            catch (Exception ex)
-            {
-
-            }
-            finally
-            {
-                conn.Close();
-            }
-            return false;
-
+            conn.Open();
+            string SQL = string.Format(
+                "SELECT  MA_NV as'Mã NV',HT_NV as'Họ Tên',GT as'Giới Tính',NS as'Ngày Sinh',DC as'Địa Chỉ',SDT as'SĐT' FROM dbo.NHANVIEN WHERE HT_NV LIKE N'%{0}%'", nv.HOTEN_NV);
+            //SqlCommand cmd = new SqlCommand(SQL, conn);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(SQL, conn);
+            da.Fill(dt);
+            conn.Close();
+            return dt;
         }
 
     }

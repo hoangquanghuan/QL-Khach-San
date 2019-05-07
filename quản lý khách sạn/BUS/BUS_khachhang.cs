@@ -32,5 +32,10 @@ namespace BUS
         {
             return dao_khachhang.xoaKhachhang(kh);
         }
+
+        public DataTable TimKiemKH(DTO_khachhang kh)
+        {
+            return dao_khachhang.TimKiemKH(kh);
+        }
     }
 }

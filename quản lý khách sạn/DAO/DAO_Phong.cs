@@ -14,7 +14,8 @@ namespace DAO
         public DataTable getPhong()
         {
             conn.Open();
-            SqlDataAdapter da = new SqlDataAdapter("SELECT MAPHONG, TENPHONG, TEN_LP, TEN_TT, GIA FROM dbo.PHONG, dbo.LOAIPHONG, dbo.TRANGTHAI WHERE dbo.PHONG.MA_LP = dbo.LOAIPHONG.MA_LP AND dbo.PHONG.MA_TT = dbo.TRANGTHAI.MA_TT", conn);
+            string kn = @"SELECT MAPHONG as'Mã Phòng', TENPHONG as'Tên Phòng', TEN_LP as'Loại Phòng', TEN_TT as'Trạng Thái', GIA as'Giá' FROM dbo.PHONG, dbo.LOAIPHONG, dbo.TRANGTHAI WHERE dbo.PHONG.MA_LP = dbo.LOAIPHONG.MA_LP AND dbo.PHONG.MA_TT = dbo.TRANGTHAI.MA_TT";
+            SqlDataAdapter da = new SqlDataAdapter(kn, conn);
             DataTable dt = new DataTable();
            // DataSet ds = new DataSet();
             da.Fill(dt);
@@ -63,7 +64,7 @@ namespace DAO
             }
             catch (Exception ex)
             {
-
+                throw ex;
             }
             finally
             {
@@ -86,7 +87,7 @@ namespace DAO
             }
             catch (Exception ex)
             {
-
+                throw ex;
             }
             finally
             {

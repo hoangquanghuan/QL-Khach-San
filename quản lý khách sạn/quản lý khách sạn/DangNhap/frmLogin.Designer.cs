@@ -42,7 +42,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.Thoat_button);
             this.panel1.Controls.Add(this.btnDangnhap);
@@ -55,11 +55,12 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(434, 202);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
+            this.panel2.AutoSize = true;
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel2.Location = new System.Drawing.Point(289, 13);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(127, 100);
@@ -95,7 +96,7 @@
             // NhapPass_textBox
             // 
             this.NhapPass_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NhapPass_textBox.Location = new System.Drawing.Point(128, 64);
+            this.NhapPass_textBox.Location = new System.Drawing.Point(140, 69);
             this.NhapPass_textBox.Multiline = true;
             this.NhapPass_textBox.Name = "NhapPass_textBox";
             this.NhapPass_textBox.Size = new System.Drawing.Size(123, 28);
@@ -115,7 +116,7 @@
             // NhapUser_textBox
             // 
             this.NhapUser_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NhapUser_textBox.Location = new System.Drawing.Point(129, 30);
+            this.NhapUser_textBox.Location = new System.Drawing.Point(141, 30);
             this.NhapUser_textBox.Multiline = true;
             this.NhapUser_textBox.Name = "NhapUser_textBox";
             this.NhapUser_textBox.Size = new System.Drawing.Size(122, 28);
@@ -127,7 +128,7 @@
             this.NhapUser_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NhapUser_label.Location = new System.Drawing.Point(11, 30);
             this.NhapUser_label.Name = "NhapUser_label";
-            this.NhapUser_label.Size = new System.Drawing.Size(118, 27);
+            this.NhapUser_label.Size = new System.Drawing.Size(124, 27);
             this.NhapUser_label.TabIndex = 0;
             this.NhapUser_label.Text = "Tên đăng nhập:";
             this.NhapUser_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -136,6 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(481, 230);
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -144,7 +146,6 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
-            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

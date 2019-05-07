@@ -29,7 +29,6 @@ namespace DTO
             this._CMND = CMND;
             this._SDT = SDT;
         }
-
         public string MA_KH
         {
             get
@@ -41,7 +40,6 @@ namespace DTO
                 _MA_KH = value;
             }
         }
-
         public string HT_KH
         {
             get
@@ -53,7 +51,6 @@ namespace DTO
                 _HT_KH = value;
             }
         }
-
         public string NS
         {
             get
@@ -65,7 +62,6 @@ namespace DTO
                 _NS = value;
             }
         }
-
         public  string GT
         {
             get
@@ -77,7 +73,6 @@ namespace DTO
                 _GT = value;
             }
         }
-
         public string CMND
         {
             get
@@ -89,7 +84,6 @@ namespace DTO
                 _CMND = value;
             }
         }
-
         public string SDT
         {
             get
@@ -101,6 +95,5 @@ namespace DTO
                 _SDT = value;
             }
         }
-
     }
 }
