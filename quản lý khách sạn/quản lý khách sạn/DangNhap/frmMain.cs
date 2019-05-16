@@ -102,6 +102,11 @@ namespace quản_lý_khách_sạn.DangNhap
             cmbLoai_phong.Text = dvgPhong.Rows[i].Cells[2].Value.ToString();
             cmbTinh_trang.Text = dvgPhong.Rows[i].Cells[3].Value.ToString();
         }
+        private void btnCap_Nhat_P_Click(object sender, EventArgs e)
+        {
+            dvgPhong.DataSource = bus_phong.getPhong();
+        }
+
 
         // liên quan nhân viên
         private void btnThoatNV_Click(object sender, EventArgs e)
@@ -297,11 +302,11 @@ namespace quản_lý_khách_sạn.DangNhap
         }
         private void btnThemHD_Click(object sender, EventArgs e)
         {
-            if (txtMa_HD.Text != " " && txtNgay_TT.Text != " "
+            if (txtMa_HD.Text != " "
                && txtHinh_thuc.Text != " " && txtP.Text != " " && txtMa_KH_HD.Text != ""
                && txtMa_NV_HD.Text != "" && txtDv.Text != "")
             {
-                DTO_hoadon hoadon = new DTO_hoadon(txtMa_HD.Text, txtMa_NV_HD.Text, txtMa_KH_HD.Text, txtNgay_TT.Text, txtHinh_thuc.Text, txtTong.Text, txtP.Text, txtDv.Text);
+                DTO_hoadon hoadon = new DTO_hoadon(txtMa_HD.Text, txtMa_NV_HD.Text, txtMa_KH_HD.Text, dtpNgay_TT.Text, txtHinh_thuc.Text, txtTong.Text, txtP.Text, txtDv.Text);
                 // thêm
                 if (bus_hoadon.themHoadon(hoadon))
                 {
@@ -320,7 +325,7 @@ namespace quản_lý_khách_sạn.DangNhap
         }
         private void btnXoaHD_Click(object sender, EventArgs e)
         {
-            DTO_hoadon hoadon = new DTO_hoadon(txtMa_HD.Text, txtMa_NV_HD.Text, txtMa_KH_HD.Text, txtNgay_TT.Text, txtHinh_thuc.Text, txtTong.Text, txtP.Text, txtDv.Text);
+            DTO_hoadon hoadon = new DTO_hoadon(txtMa_HD.Text, txtMa_NV_HD.Text, txtMa_KH_HD.Text, dtpNgay_TT.Text, txtHinh_thuc.Text, txtTong.Text, txtP.Text, txtDv.Text);
             // thêm
             if (bus_hoadon.xoaHoaDon(hoadon))
             {
@@ -334,7 +339,7 @@ namespace quản_lý_khách_sạn.DangNhap
         }
         private void btnSuaHD_Click(object sender, EventArgs e)
         {
-            DTO_hoadon hoadon = new DTO_hoadon(txtMa_HD.Text, txtMa_NV_HD.Text, txtMa_KH_HD.Text, txtNgay_TT.Text, txtHinh_thuc.Text, txtTong.Text, txtP.Text, txtDv.Text);
+            DTO_hoadon hoadon = new DTO_hoadon(txtMa_HD.Text, txtMa_NV_HD.Text, txtMa_KH_HD.Text, dtpNgay_TT.Text, txtHinh_thuc.Text, txtTong.Text, txtP.Text, txtDv.Text);
             // thêm
             if (bus_hoadon.suaHoaDon(hoadon))
             {
@@ -353,7 +358,7 @@ namespace quản_lý_khách_sạn.DangNhap
             txtMa_HD.Text = dvgHoa_don.Rows[i].Cells[0].Value.ToString();
             txtMa_NV_HD.Text = dvgHoa_don.Rows[i].Cells[1].Value.ToString();
             txtMa_KH_HD.Text = dvgHoa_don.Rows[i].Cells[3].Value.ToString();
-            txtNgay_TT.Text = dvgHoa_don.Rows[i].Cells[5].Value.ToString();
+            dtpNgay_TT.Text = dvgHoa_don.Rows[i].Cells[5].Value.ToString();
             txtHinh_thuc.Text = dvgHoa_don.Rows[i].Cells[6].Value.ToString();
             txtTong.Text = dvgHoa_don.Rows[i].Cells[7].Value.ToString();
             txtP.Text = dvgHoa_don.Rows[i].Cells[8].Value.ToString();
@@ -427,6 +432,14 @@ namespace quản_lý_khách_sạn.DangNhap
            
         }
 
-        
+        private void btnDatPhong_Click(object sender, EventArgs e)
+        {
+            Đặt_Phòng DatPhong = new Đặt_Phòng();
+            //this.Hide();
+            //DatPhong.ShowDialog();
+            DatPhong.Show();
+            //this.Close();
+        }
+
     }
 }

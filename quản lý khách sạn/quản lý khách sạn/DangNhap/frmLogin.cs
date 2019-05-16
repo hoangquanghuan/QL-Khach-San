@@ -61,6 +61,5 @@ namespace quản_lý_khách_sạn.DangNhap
                 }
             }
         }
-        
     }
 }

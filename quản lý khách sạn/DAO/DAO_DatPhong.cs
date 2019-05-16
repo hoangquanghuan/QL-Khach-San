@@ -9,28 +9,28 @@ using System.Data;
 
 namespace DAO
 {
-    public class DAO_dichvu: DBconnect
+    public class DAO_DatPhong : DBconnect
     {
-        public DataTable getDichvu()
+        public DataTable getDatPhong()
         {
-            string kn = @" SELECT MA_DV as'Mã DV',TEN_DV as'Tên DV',GIA as'Giá'
-                            FROM dbo.DICHVU";
             conn.Open();
+            string kn = @"SELECT * FROM dbo.PHIEUDATPHONG";
             SqlDataAdapter da = new SqlDataAdapter(kn, conn);
             DataTable dt = new DataTable();
+            // DataSet ds = new DataSet();
             da.Fill(dt);
             conn.Close();
             return dt;
         }
 
-        public bool themDichvu(DTO_dichvu dv)
+        public bool themDatPhong(DTO_DatPhong dp)
         {
             try
             {
                 conn.Open();
                 string SQL = string.Format(
-                    "INSERT INTO dbo.DICHVU VALUES  ('{0}',N'{1}','{2}')"
-                    ,dv.MA_DV,dv.TEN_DV,dv.GIA);
+                    "INSERT INTO dbo.PHIEUDATPHONG(MAPHIEUDAT,MAPHONG,MA_KH,NGAYDAT,SONGUOI) VALUES  ('{0}',N'{1}',N'{2}',N'{3}',N'{4}')"
+                    , dp.MAPHIEUDAT,dp.MAPHONG,dp.MA_KH,dp.NGAYDAT,dp.SONGUOI);
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 int kq = (int)cmd.ExecuteNonQuery();
                 if (kq > 0)
@@ -48,14 +48,14 @@ namespace DAO
             return false;
         }
 
-        public bool suaDichvu(DTO_dichvu dv)
+        public bool suaDatPhong(DTO_DatPhong dp)
         {
             try
             {
                 conn.Open();
                 string SQL = string.Format(
-                    "UPDATE dbo.DICHVU SET TEN_DV='{0}',GIA='{1}' where MA_DV='{2}'",
-                    dv.TEN_DV,dv.GIA,dv.MA_DV);
+                    "UPDATE dbo.PHIEUDATPHONG SET MAPHONG = '{0}', MA_KH = '{1}', NGAYDAT = '{2}', SONGUOI = '{3}' WHERE MAPHIEUDAT = '{4}'",
+                   dp.MAPHONG,dp.MA_KH,dp.NGAYDAT,dp.SONGUOI,dp.MAPHIEUDAT);
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 int kq = cmd.ExecuteNonQuery();
                 if (kq > 0)
@@ -64,7 +64,7 @@ namespace DAO
             }
             catch (Exception ex)
             {
-                throw ex;
+                
             }
             finally
             {
@@ -73,12 +73,12 @@ namespace DAO
             return false;
         }
 
-        public bool xoaDichvu(DTO_dichvu dv)
+        public bool xoaDatPhong(DTO_DatPhong dp)
         {
             try
             {
                 conn.Open();
-                string SQL = string.Format("DELETE dbo.DICHVU WHERE MA_DV=N'{0}'", dv.MA_DV);
+                string SQL = string.Format("DELETE dbo.PHIEUDATPHONG WHERE MAPHIEUDAT ='{0}'", dp.MAPHIEUDAT);
                 SqlCommand cmd = new SqlCommand(SQL, conn);
                 int kq = cmd.ExecuteNonQuery();
                 if (kq > 0)
@@ -87,7 +87,7 @@ namespace DAO
             }
             catch (Exception ex)
             {
-                throw ex;
+
             }
             finally
             {
@@ -95,8 +95,6 @@ namespace DAO
             }
             return false;
         }
-
-
 
     }
 }

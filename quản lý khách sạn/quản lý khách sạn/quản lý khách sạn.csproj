@@ -64,14 +64,14 @@
     <Compile Include="DangNhap\frmQuenMK.Designer.cs">
       <DependentUpon>frmQuenMK.cs</DependentUpon>
     </Compile>
-    <Compile Include="DangNhap\frmThongTinHoaDon_ChiTiet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DangNhap\frmThongTinHoaDon_ChiTiet.Designer.cs">
-      <DependentUpon>frmThongTinHoaDon_ChiTiet.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Đặt_Phòng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Đặt_Phòng.Designer.cs">
+      <DependentUpon>Đặt_Phòng.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DangNhap\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,9 +80,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap\frmQuenMK.resx">
       <DependentUpon>frmQuenMK.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DangNhap\frmThongTinHoaDon_ChiTiet.resx">
-      <DependentUpon>frmThongTinHoaDon_ChiTiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -94,6 +91,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Đặt_Phòng.resx">
+      <DependentUpon>Đặt_Phòng.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
