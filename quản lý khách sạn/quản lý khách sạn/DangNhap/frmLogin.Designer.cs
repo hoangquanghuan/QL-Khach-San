@@ -99,6 +99,7 @@
             this.NhapPass_textBox.Location = new System.Drawing.Point(140, 69);
             this.NhapPass_textBox.Multiline = true;
             this.NhapPass_textBox.Name = "NhapPass_textBox";
+            this.NhapPass_textBox.PasswordChar = '*';
             this.NhapPass_textBox.Size = new System.Drawing.Size(123, 28);
             this.NhapPass_textBox.TabIndex = 9;
             // 
@@ -146,6 +147,7 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

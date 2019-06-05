@@ -8,3 +8,16 @@ C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý 
 C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
 C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DAO\obj\Debug\DAO.exe
 C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DAO\obj\Debug\DAO.pdb
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DAO\bin\Debug\DAO.exe.config
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DAO\bin\Debug\DAO.exe
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DAO\bin\Debug\DAO.pdb
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DAO\bin\Debug\DTO.exe
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DAO\bin\Debug\DTO.pdb
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DAO\bin\Debug\DTO.exe.config
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DAO\obj\Debug\DAO.csproj.GenerateResource.cache
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DAO\obj\Debug\DAO.exe
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DAO\obj\Debug\DAO.pdb

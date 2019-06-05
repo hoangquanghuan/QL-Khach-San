@@ -29,3 +29,42 @@ C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý 
 C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DAO.exe
 C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DAO.pdb
 C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.Đặt_Phòng.resources
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\quản lý khách sạn.exe
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\quản lý khách sạn.pdb
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\BUS.exe
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DTO.exe
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DAO.exe
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\BUS.pdb
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\BUS.exe.config
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DTO.pdb
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DTO.exe.config
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DAO.pdb
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DAO.exe.config
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csprojAssemblyReference.cache
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmLogin.resources
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmMain.resources
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmDoiMK.resources
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.Properties.Resources.resources
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.Đặt_Phòng.resources
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csproj.GenerateResource.cache
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csproj.CoreCompileInputs.cache
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csproj.CopyComplete
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.exe
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.pdb
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.exe
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.pdb
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\quản lý khách sạn.exe
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\quản lý khách sạn.pdb
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\BUS.exe
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DTO.exe
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DAO.exe
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\BUS.pdb
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DTO.pdb
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\bin\Debug\DAO.pdb
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csprojResolveAssemblyReference.cache
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmLogin.resources
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmMain.resources
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.DangNhap.frmDoiMK.resources
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.Properties.Resources.resources
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản_lý_khách_sạn.Đặt_Phòng.resources
+D:\hải đông\QL-Khach-San\quản lý khách sạn\quản lý khách sạn\obj\Debug\quản lý khách sạn.csproj.GenerateResource.Cache

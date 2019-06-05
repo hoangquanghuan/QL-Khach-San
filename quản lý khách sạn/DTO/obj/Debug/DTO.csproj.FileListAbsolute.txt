@@ -6,3 +6,12 @@ C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý 
 C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.csproj.GenerateResource.Cache
 C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.exe
 C:\Users\Hai-Dong\Documents\Visual Studio 2015\Projects\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.pdb
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DTO\bin\Debug\DTO.exe.config
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DTO\bin\Debug\DTO.exe
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DTO\bin\Debug\DTO.pdb
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.exe
+C:\Users\Vu Duc Tinh\Downloads\thuc_tap_nhom\QL-Khach-San\quản lý khách sạn\DTO\obj\Debug\DTO.pdb

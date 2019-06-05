@@ -61,5 +61,10 @@ namespace quản_lý_khách_sạn.DangNhap
                 }
             }
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
